@@ -1,0 +1,159 @@
+<div class="container">
+  <div class="logo-container">
+    <img
+      src="assets/SJ-logo.png"
+      height="45px"
+      width="45px"
+      alt="Shantanu Joshi logo"
+      fragment="about-me"
+      (click)="navigateToSection('about-me')"
+    />
+  </div>
+
+  <span class="flex-spacer"></span>
+
+  <img
+    src="assets/bars-solid.svg"
+    alt="Bars"
+    width="24px"
+    height="24px"
+    (click)="flipOverlay()"
+    class="responsive-bars"
+  />
+
+  <ul class="to-right">
+    <li>
+      <a fragment="about-me" (click)="navigateToSection('about-me')">
+        <p [ngClass]="{ active: fragment === 'about-me' ? true : false }">
+          About me
+        </p>
+      </a>
+    </li>
+    <li>
+      <a fragment="experience" (click)="navigateToSection('experience')">
+        <p [ngClass]="{ active: fragment === 'experience' ? true : false }">
+          Experience
+        </p>
+      </a>
+    </li>
+    <li>
+      <a fragment="education" (click)="navigateToSection('education')">
+        <p [ngClass]="{ active: fragment === 'education' ? true : false }">
+          Education
+        </p>
+      </a>
+    </li>
+    <li>
+      <a fragment="projects" (click)="navigateToSection('projects')">
+        <p [ngClass]="{ active: fragment === 'projects' ? true : false }">
+          Projects
+        </p>
+      </a>
+    </li>
+
+    <li>
+      <a fragment="achievements" (click)="navigateToSection('achievements')">
+        <p [ngClass]="{ active: fragment === 'achievements' ? true : false }">
+          Accomplishments
+        </p>
+      </a>
+    </li>
+    <li>
+      <a fragment="talks" (click)="navigateToSection('talks')">
+        <p [ngClass]="{ active: fragment === 'talks' ? true : false }">Talks</p>
+      </a>
+    </li>
+
+    <li>
+      <a fragment="articles" (click)="navigateToSection('articles')">
+        <p [ngClass]="{ active: fragment === 'articles' ? true : false }">
+          Articles
+        </p>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div
+  id="overlays-responsive-bar"
+  class="overlay"
+  [ngStyle]="{ width: toggleOverlays === true ? '100%' : '0%' }"
+>
+  <a class="closebtn" (click)="closeNav()">
+    <img
+      src="assets/times-circle-solid.svg"
+      alt="Close icon"
+      width="30px"
+      height="30px"
+    />
+  </a>
+  <div class="overlay-content">
+    <a
+      fragment="about-me"
+      (click)="navigateToSection('about-me')"
+      (click)="closeNav()"
+    >
+      <p [ngClass]="{ active: fragment === 'about-me' ? true : false }">
+        About me
+      </p>
+    </a>
+
+    <a
+      fragment="experience"
+      (click)="navigateToSection('experience')"
+      (click)="closeNav()"
+    >
+      <p [ngClass]="{ active: fragment === 'experience' ? true : false }">
+        Experience
+      </p>
+    </a>
+
+    <a
+      fragment="education"
+      (click)="navigateToSection('education')"
+      (click)="closeNav()"
+    >
+      <p [ngClass]="{ active: fragment === 'education' ? true : false }">
+        Education
+      </p>
+    </a>
+
+    <a
+      fragment="projects"
+      (click)="navigateToSection('projects')"
+      (click)="closeNav()"
+    >
+      <p [ngClass]="{ active: fragment === 'projects' ? true : false }">
+        Projects
+      </p>
+    </a>
+
+    <a
+      fragment="achievements"
+      (click)="navigateToSection('achievements')"
+      (click)="closeNav()"
+    >
+      <p [ngClass]="{ active: fragment === 'achievements' ? true : false }">
+        Accomplishments
+      </p>
+    </a>
+
+    <a
+      fragment="talks"
+      (click)="navigateToSection('talks')"
+      (click)="closeNav()"
+    >
+      <p [ngClass]="{ active: fragment === 'talks' ? true : false }">Talks</p>
+    </a>
+
+    <a
+      fragment="articles"
+      (click)="navigateToSection('articles')"
+      (click)="closeNav()"
+    >
+      <p [ngClass]="{ active: fragment === 'articles' ? true : false }">
+        Articles
+      </p>
+    </a>
+  </div>
+</div>

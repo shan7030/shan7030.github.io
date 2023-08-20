@@ -1,0 +1,41 @@
+<div class="container cont-1">
+  <div class="row center heading">
+    <p class="name">Experience</p>
+  </div>
+</div>
+
+<div class="container cont-2">
+  <div class="column">
+    <div class="element" *ngFor="let experienceListItem of experienceList">
+      <div class="element-header">
+        <h5>
+          <span
+            >{{ experienceListItem.position }}
+            <a href="{{ experienceListItem.companyLink }}" target="_blank"
+              ><span class="company-name">{{
+                experienceListItem.companyName
+              }}</span> </a
+            >, {{ experienceListItem.companyLocation }}
+          </span>
+          <span
+            ><p class="time-period">{{ experienceListItem.duration }}</p></span
+          >
+        </h5>
+      </div>
+
+      <ul>
+        <li *ngFor="let workListItem of experienceListItem.workItems">
+          {{ workListItem }}
+        </li>
+      </ul>
+
+      <div class="technology-list-container">
+        <span
+          class="technology-item"
+          *ngFor="let techologyItem of experienceListItem.technologyUsed"
+          >{{ techologyItem }}</span
+        >
+      </div>
+    </div>
+  </div>
+</div>

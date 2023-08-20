@@ -1,0 +1,131 @@
+:host {
+  background: #1a3140;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .container {
+    display: flex;
+
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right-container {
+      p.name {
+        color: #ff7b00;
+        font-size: 40px;
+        text-shadow: 0px 0px 0.4px #f4f4f4;
+        font-weight: 600;
+        letter-spacing: 2px;
+        width: 14ch;
+        animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      p.description {
+        color: #f4f4f4;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      a.github-link {
+        color: #ff7b00;
+        text-shadow: 0px 0px 0.2px #f4f4f4;
+      }
+
+      p.interest-header {
+        color: #f4f4f4;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      li {
+        color: #f4f4f4;
+
+        .interest-item {
+          color: #f4f4f4;
+          font-size: 20px;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+
+      // p.description {
+      //   color: #f4f4f4;
+      //   text-shadow: 0px 0px 5px #f4f4f4;
+      //   font-size: 24px;
+      //   font-weight: 400;
+
+      //   .lang-name {
+      //     color: #ff7b00;
+      //     text-shadow: 0px 0px 5px #ff7b00;
+      //     font-weight: 500;
+      //   }
+      // }
+    }
+
+    .left-container {
+      display: flex;
+      flex-direction: column;
+      width: inherit;
+      .img-fluid {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        border: 3px solid #1e1e1e;
+      }
+
+      button {
+        cursor: pointer;
+        background: #383838;
+        box-shadow: 2px 5px 2px 4px rgba(0, 0, 0, 0.3);
+        height: 40px;
+        color: #f4f4f4;
+        border: 0px solid;
+        border-radius: 3px;
+        width: 200px;
+        margin: auto;
+      }
+
+      a {
+        cursor: pointer;
+        background: #383838;
+        box-shadow: 2px 5px 2px 4px rgba(0, 0, 0, 0.3);
+        border: 0px solid;
+        border-radius: 3px;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+
+      .left-container {
+        button {
+          display: none;
+        }
+      }
+
+      .right-container {
+        p.name {
+          margin: auto;
+        }
+      }
+    }
+  }
+}

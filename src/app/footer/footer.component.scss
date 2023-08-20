@@ -1,0 +1,30 @@
+:host {
+  box-shadow: 10px 5px 5px -1px rgba(0, 0, 0, 0.3);
+
+  .cont-1 {
+    background: #1e1e1e;
+    border-top: 1px solid #262626;
+    box-sizing: border-box;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+
+    .flex-spacer {
+      flex: 1 1 auto;
+    }
+
+      p {
+        margin: 0px;
+        color: #f4f4f4;
+        padding: 10px;
+      }
+
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+}

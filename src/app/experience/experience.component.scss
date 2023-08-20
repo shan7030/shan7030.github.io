@@ -1,0 +1,107 @@
+:host {
+  background: #ebeff2;
+
+  .cont-1 {
+    margin-top: 30px;
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .heading {
+      p.name {
+        color: #1a3140; // #243a49
+        text-shadow: 0px 0px 5px #f4f4f4;
+        font-size: 34px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .cont-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    .column {
+      padding: 5px 0 5px 30px;
+      border-left: 3px solid #161616;
+    }
+
+    .element {
+      padding: 10px;
+      background-color: #1a3140;
+      color: #f4f4f4;
+      margin: 20px 0;
+      position: relative;
+
+      box-shadow: 5px 5px 5px 2px #888888;
+      .element-header {
+        text-align: center;
+        border-bottom: 2px solid #1e1e1e;
+        margin-bottom: 10px;
+        padding: 10px;
+        & > h5 {
+          display: flex;
+          justify-content: space-between;
+
+          .company-name {
+            color: #ff7b00;
+            font-weight: 500;
+          }
+
+          .time-period {
+            font-size: 17px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+
+      .technology-list-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .technology-item {
+          background: #383838;
+          color: #f4f4f4;
+          border-radius: 2px;
+          margin-left: 10px;
+          margin-top: 5px;
+          padding: 5px;
+          font-size: 14px;
+        }
+      }
+
+      p {
+        color: #e0e0e0;
+        font-size: 14px;
+      }
+    }
+
+    .element:before {
+      content: "";
+      position: absolute;
+      left: -37px;
+      top: 7px;
+      width: 10px;
+      height: 10px;
+      border: 5px solid #161616;
+    }
+
+    .element:after {
+      content: "";
+      position: absolute;
+      left: -18px;
+      top: 7px;
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-left: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 10px solid #1a3140;
+    }
+  }
+}

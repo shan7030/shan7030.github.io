@@ -1,0 +1,20 @@
+<div class="container cont-1">
+  <div class="row center heading">
+    <p class="name">Accomplishments</p>
+  </div>
+
+  <div class="card">
+    <div class="card-body" *ngFor="let achievement of achievementsList">
+      <p class="card-title">🏆 {{ achievement.name }}</p>
+      <p class="card-association-list">
+        <a
+          *ngFor="let associatedWithItem of achievement.associatedWith"
+          class="card-text"
+          href="{{ associatedWithItem.link }}"
+          target="_blank"
+          >{{ associatedWithItem.name }}</a
+        >
+      </p>
+    </div>
+  </div>
+</div>

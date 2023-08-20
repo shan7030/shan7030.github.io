@@ -1,0 +1,33 @@
+<div class="container cont-1">
+  <div class="row center heading">
+    <p class="name">Education</p>
+  </div>
+</div>
+
+<div class="container timeline">
+  <div
+    class="timeline__content"
+    *ngFor="let educationListItem of educationList"
+  >
+    <p class="timeline__item timeline__item--year">
+      {{ educationListItem.year }}
+    </p>
+
+    <div class="timeline__item">
+      <div class="timeline__item--header">
+        <h5 class="timeline__title">{{ educationListItem.degree }}</h5>
+        <p class="timeline__grades">{{ educationListItem.grades }}</p>
+      </div>
+      <a
+        class="timeline__title--university"
+        href="{{ educationListItem.link }}"
+        target="_blank"
+      >
+        {{ educationListItem.university }}
+      </a>
+    </div>
+  </div>
+  <div>
+    <p class="timeline__item timeline__item--year">2013</p>
+  </div>
+</div>
