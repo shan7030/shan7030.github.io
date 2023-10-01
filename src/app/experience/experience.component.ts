@@ -12,7 +12,7 @@ export class ExperienceComponent implements OnInit {
       companyLink: 'https://www.deepintent.com/',
       companyLocation: 'Pune, India',
       position: 'Senior Software Engineer',
-      duration: 'May 21 - Present',
+      duration: 'May 2021 - Aug 2023',
       workItems: [
         'Responsible for the development of efficient features in healthcare adtech platforms by following agile methodologies from scratch',
         'Contributed to modernizing the UI components across all the products and migrating existing node.js service to spring boot',
@@ -41,7 +41,7 @@ export class ExperienceComponent implements OnInit {
       companyLink: 'https://www.sms-digital.com/en/',
       companyLocation: 'Pune, India',
       position: 'Full Stack Developer',
-      duration: 'Jul 20 - May 21',
+      duration: 'Jul 2020 - May 2021',
       workItems: [
         'Responsible for creating a scalable Product known as Cracks Preventer, heavily involved in creating System Design and architecture from scratch',
         'Developed a real-time alert system to depict ML predictions with 50ms precision using Server sent events and WebSocket APIs',
@@ -74,7 +74,7 @@ export class ExperienceComponent implements OnInit {
       companyLink: 'https://www.sms-digital.com/en/',
       companyLocation: 'Pune, India',
       position: 'Full Stack Development Intern',
-      duration: 'Feb 20 – Jun 20',
+      duration: 'Feb 2020 – Jun 2020',
       workItems: [
         'Implemented Full Stack Web application for analysis of the throughput of various metals and their grades',
         'Responsible for developing both React Frontend and Python Backend services along with User Authentication',
@@ -96,7 +96,7 @@ export class ExperienceComponent implements OnInit {
       companyLink: 'https://www.geeksforgeeks.org/',
       companyLocation: 'India',
       position: 'Technical Content Writer Intern',
-      duration: 'May 20 – Oct 20',
+      duration: 'May 2020 – Oct 2020',
       workItems: [
         'Wrote various articles on Geeks for Geeks based on Competitive Programming, Data Structure, Algorithms, Machine Learning, Deep Learning, Neural Networks, Frameworks and other Emerging concepts',
         'Improved quality of existing articles, also fixed incorrect information',
@@ -120,7 +120,7 @@ export class ExperienceComponent implements OnInit {
       companyLink: 'https://www.sms-digital.com/en/',
       companyLocation: 'Dusseldorf, Germany',
       position: 'Bachelor’s Project Intern',
-      duration: 'Dec 19 – Feb 20',
+      duration: 'Dec 2019 – Feb 2020',
       workItems: [
         'Won an opportunity to work on this project in the Dusseldorf Head Office, Germany for 2 months',
         'Developed Full Stack Web application to perform analysis on Demand Forecast made by ML Models',
@@ -149,7 +149,7 @@ export class ExperienceComponent implements OnInit {
       companyLink: 'https://www.siemens.com/global/en.html',
       companyLocation: 'Pune, India',
       position: 'Summer Intern',
-      duration: 'May 19 – Jul 19',
+      duration: 'May 2019 – Jul 2019',
       workItems: [
         'Won an opportunity to work in Core Software Developer Team based on Angular Code Sprint',
         'Developed a Limit Administration Portal to create the workflow between Administrator and Client',

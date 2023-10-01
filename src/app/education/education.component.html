@@ -9,6 +9,13 @@
     class="timeline__content"
     *ngFor="let educationListItem of educationList"
   >
+    <p
+      class="timeline__item timeline__item--year"
+      *ngIf="educationListItem.nextYear != ''"
+    >
+      {{ educationListItem.nextYear }}
+    </p>
+
     <p class="timeline__item timeline__item--year">
       {{ educationListItem.year }}
     </p>
