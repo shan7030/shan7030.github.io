@@ -8,6 +8,49 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienceComponent implements OnInit {
   experienceList = [
     {
+      companyName: 'University of California, Davis',
+      companyLink: 'https://www.ucdavis.edu/',
+      companyLocation: 'California',
+      position: 'Graduate Student Researcher',
+      duration: 'Sep 2023 - Present',
+      workItems: [
+        'Employing novel deep learning approaches such as artificial neural networks (ANN) and convolutional neural networks (CNN) to detect silent heart attacks and assess preeclampsia risk through analysis of 12-lead ECG data',
+        'Developed a CNN model with an accuracy of 91% having worked on dilations, which is much better than pre-trained models'
+      ],
+      technologyUsed: [
+        'Python',
+        'Tensorflow',
+        'Keras',
+        'Pytorch',
+        'sklearn',
+        'matplotlib',
+        'MySQL',
+        'Sequelize',
+        'React',
+        'Node.js',
+        'Express'
+      ],
+    },
+    {
+      companyName: 'University of California, Davis',
+      companyLink: 'https://www.ucdavis.edu/',
+      companyLocation: 'California',
+      position: 'Graduate Teaching Assistant',
+      duration: 'Sep 2023 - Dec 2023',
+      workItems: [
+        'Facilitated the learning of C++ and Arduino programming for 50 undergraduate students, fostering a dynamic and engaging educational environment as a Teaching Assistant',
+        'Guided students in mastering engineering design principles, prototyping, research paper writing, and the creation of engineering design posters'
+      ],
+      technologyUsed: [
+        'C++',
+        'Arduino',
+        'Software Engineering',
+        'Software Engineering Research',
+        'Software Engineering and Development',
+        'Research Posters and Papers',
+      ],
+    },
+    {
       companyName: 'DeepIntent',
       companyLink: 'https://www.deepintent.com/',
       companyLocation: 'Pune, India',
