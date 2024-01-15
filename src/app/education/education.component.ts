@@ -13,7 +13,7 @@ export class EducationComponent implements OnInit {
       year: '2024',
       nextYear: '',
       link: 'https://www.ucdavis.edu/',
-      grades: 'Grades: TBA',
+      grades: 'Grades: 4 / 4',
     },
     {
       degree: 'Bachelor of Engineering - Computer Engineering',
