@@ -32,7 +32,7 @@ export class NameComponent implements OnInit {
 
   onDownloadResume() {
     const URL: string =
-      'https://drive.google.com/file/d/1KT_CRe03uDoPDwVmjKRq546iadsjHcGK/view?usp=sharing';
+      'https://drive.google.com/file/d/1fcBAszGZbVmpwlQrt4d0NvdUg4HcSHEp/view?usp=sharing';
     window.open(URL, '_blank');
   }
 }

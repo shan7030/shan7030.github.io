@@ -8,14 +8,47 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienceComponent implements OnInit {
   experienceList = [
     {
+      companyName: 'ResMed',
+      companyLink: 'https://www.resmed.com/en-us/',
+      companyLocation: 'San Diego, California',
+      position: 'Software Engineer Intern',
+      duration: 'Jun 2024 - Present',
+      workItems: [
+        'Built React UI from scratch and configured serverless AWS Lambdas to streamline the billing system for the Mulitcare product',
+        'Implemented observability features to enhance operational visibility across 12 Node.js and Spring Boot microservices',
+        'Integrated OpenTelemetry distributed tracing, resulting in a 70% reduction in production bug detection time',
+        'Developed dynamic dashboards using Datadog and AWS CloudWatch to monitor logs, metrics, traces, and provide real-time alerts'
+      ],
+      technologyUsed: [
+        'JavaScript',
+        'React', 
+        'Node.js', 
+        'Express', 
+        'Java', 
+        'Spring', 
+        'AWS Lambda', 
+        'API Gateway', 
+        'OpenTelemetry', 
+        'Datadog',
+        'AWS VPC',
+        'AWS IAM',
+        'AWS Cloudwatch',
+        'AWS X-Ray'
+      ],
+    },
+    {
       companyName: 'University of California, Davis',
       companyLink: 'https://www.ucdavis.edu/',
       companyLocation: 'California',
       position: 'Graduate Student Researcher',
       duration: 'Sep 2023 - Present',
       workItems: [
-        'Employing novel deep learning approaches such as artificial neural networks (ANN) and convolutional neural networks (CNN) to detect silent heart attacks and assess preeclampsia risk through analysis of 12-lead ECG data',
-        'Developed a 1D-CNN model with an accuracy of 91% having worked on dilations, performs better than pre-trained models',
+        'Designed a robust ML pipeline by building Node.js and Express backend for real-time pulse data collection, processing, MySQL storage',
+        'Developed React frontend for displaying silent heart attack predictions and integrating Highcharts for visualizing 12-lead ECG waveforms',
+        'Developed CNN 1D model for detecting silent heart attack, achieving a notable accuracy of 91% using 12 lead ECG data',
+        'Built a robust ML pipeline to extract features from 12 lead ECG using neurokit and apply classical ML algorithms such as random forests, logistic regression, support vector machine (SVM) classifier to detect silent heart attack',
+        'Implemented random forest model with an accuracy of 87% and AUROC of 93% for identifying pregnancy state',
+        'Employed optimization techniques such as RFE and PCA to eliminate and transform features extracted'
       ],
       technologyUsed: [
         'Python',
@@ -29,6 +62,7 @@ export class ExperienceComponent implements OnInit {
         'React',
         'Node.js',
         'Express',
+        'ONNX'
       ],
     },
     {
@@ -61,6 +95,7 @@ export class ExperienceComponent implements OnInit {
         'Contributed to modernizing the UI components across all the products and migrating existing node.js service to spring boot',
         'Worked on various research task POCs, creating design documents for new business features and developing standard pattern lib',
         'Revamped the existing data grid with ag-grid, worked on virtualised lists, pagination, react-beautiful-dnd, lazy loading and infinite scroll to improve the application performance significantly',
+        'Recognized for building and scaling Node.js and Spring Boot GraphQL microservices, developed for the core campaign creation flow',
         'Responsible for taking interviews and making potential hiring decisions',
         'Previously working as a product-line head, responsible for gathering requirements, determining technical feasibility, developing proof of concepts based on research findings and implementing those features',
       ],
@@ -141,7 +176,7 @@ export class ExperienceComponent implements OnInit {
       position: 'Technical Content Writer Intern',
       duration: 'May 2020 – Oct 2020',
       workItems: [
-        'Wrote various articles on Geeks for Geeks based on Competitive Programming, Data Structure, Algorithms, Machine Learning, Deep Learning, Neural Networks, Frameworks and other Emerging concepts',
+        'Authored articles on a variety of technical topics like Algorithms and Software Development, read by over 100k users to date',
         'Improved quality of existing articles, also fixed incorrect information',
       ],
       technologyUsed: [
@@ -166,7 +201,7 @@ export class ExperienceComponent implements OnInit {
       duration: 'Dec 2019 – Feb 2020',
       workItems: [
         'Won an opportunity to work on this project in the Dusseldorf Head Office, Germany for 2 months',
-        'Developed Full Stack Web application to perform analysis on Demand Forecast made by ML Models',
+        'Developed Full Stack Web application to perform analysis on Demand Forecast made by ML Models for 10,000 steel-grades',
         'The user can switch ML Models and see the forecasts on time-series data along with model performance',
         'Scheduled Cronjobs to re-train the ML models weekly',
         'Pre-processed and analyzed time-series data',
@@ -195,8 +230,8 @@ export class ExperienceComponent implements OnInit {
       duration: 'May 2019 – Jul 2019',
       workItems: [
         'Won an opportunity to work in Core Software Developer Team based on Angular Code Sprint',
-        'Developed a Limit Administration Portal to create the workflow between Administrator and Client',
-        'Using the portal Client gets notified when consumed 80% of resources for a service and can request more resources',
+        'Built a Limit Administration Portal using Siemens Apollo web framework and GraphQL to create workflow between Administrator and Client, ultimately reducing manual support hours by 90%',
+        'Using the portal, the Client gets notified when consumed 80% of resources for a service and can request more resources from the admin',
         'An administrator can provide more resources to the requested service',
       ],
       technologyUsed: [
@@ -210,7 +245,7 @@ export class ExperienceComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
